@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.annotations.Api;
 import me.dio.carrinhoapi.model.Item;
 import me.dio.carrinhoapi.model.Sacola;
 import me.dio.carrinhoapi.resource.dto.ItemDto;
 import me.dio.carrinhoapi.service.SacolaService;
 
+@Api(value="/ifood/sacolas")
 @RestController
 @RequestMapping("/ifood/sacola")
 public class SacolaResource {
